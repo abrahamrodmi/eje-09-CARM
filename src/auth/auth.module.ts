@@ -14,7 +14,7 @@ import { jwtConstants } from './constants';
       secret: jwtConstants.secret,
       signOptions: { expiresIn: '60s' },
     }),
-    TypeOrmModule.forFeature([User]), // 👈 corregido
+    TypeOrmModule.forFeature([User]), 
   ],
   controllers: [AuthController],
   providers: [AuthService],
